@@ -4,9 +4,9 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"login-go/entity"
-	"login-go/mail"
-	"login-go/repository"
+	"login-example/entity"
+	"login-example/mail"
+	"login-example/repository"
 	"math/rand"
 )
 

@@ -216,7 +216,7 @@ package repository
 import (
 	"context"
 	"fmt"
-	"login-go/entity"
+	"login-example/entity"
 	"time"
 
 	"github.com/jmoiron/sqlx"
@@ -317,9 +317,9 @@ var (
 )
 
 func (m *mailhogMailer) SendWithActivateToken(email, token string) error {
-	from := "info@login-go.app"
+	from := "info@login-example.app"
 	recipients := []string{email}
-	subject := "認証コード by LOGIN-GO"
+	subject := "認証コード by login-example"
 	body := fmt.Sprintf("認証用トークンです。\nトークン: %s", token)
 
 	smtpServer := fmt.Sprintf("%s:%d", hostname, port)
@@ -358,9 +358,9 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"login-go/entity"
-	"login-go/mail"
-	"login-go/repository"
+	"login-example/entity"
+	"login-example/mail"
+	"login-example/repository"
 	"math/rand"
 )
 

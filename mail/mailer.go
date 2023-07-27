@@ -26,9 +26,9 @@ var (
 )
 
 func (m *mailhogMailer) SendWithActivateToken(email, token string) error {
-	from := "info@login-go.app"
+	from := "info@login-example.app"
 	recipients := []string{email}
-	subject := "認証コード by LOGIN-GO"
+	subject := "認証コード by login-example"
 	body := fmt.Sprintf("認証用トークンです。\nトークン: %s", token)
 
 	smtpServer := fmt.Sprintf("%s:%d", hostname, port)

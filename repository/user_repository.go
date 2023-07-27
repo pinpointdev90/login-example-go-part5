@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	"fmt"
-	"login-go/entity"
+	"login-example/entity"
 	"time"
 
 	"github.com/jmoiron/sqlx"
